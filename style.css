@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 40px;
+    background: linear-gradient(45deg, #ff3c00, #ffcc00);
+    color: black;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.skill-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    background: #1c1c1c;
+    padding: 15px 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background: #ff3c00;
+    transform: scale(1.1);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background: #ff3c00;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 20px;
+    background: #111;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonial {
+    margin: 20px auto;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-icons i {
+    font-size: 40px; /* आइकन का साइज बढ़ाया */
+    color: 007bff;
+    margin: 0 20px; /* आइकन के बीच स्पेस */
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.contact-icons i:hover {
+    transform: scale(1.2); /* होवर पर साइज बढ़े */
+}
+.google-icon {
+    font-size: 50px; /* साइज बढ़ा दिया */
+    color: white; /* जीमेल का लाल रंग */
+    margin: 0 20px;
+    transition: transform 0.3s;
+}
+
+.whatsapp-icon {
+    font-size: 50px; /* साइज बढ़ा दिया */
+    color: #25D366; /* व्हाट्सएप का हरा रंग */
+    margin: 0 20px;
+    transition: transform 0.3s;
+}
+
+.contact-icons i {
+    cursor: pointer;
+}
+
+.contact-icons i:hover {
+    transform: scale(1.2); /* होवर पर साइज बढ़े */
+}
+.google-icon {
+    font-size: 50px;
+   color: white;  /* ज़बरदस्ती रंग लागू करें */
+    margin: 0 20px;
+    transition: transform 0.3s;
+}
+
+.whatsapp-icon {
+    font-size: 50px;
+    color: #25D366 !important;
+    margin: 0 20px;
+    transition: transform 0.3s;
+}
